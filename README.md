@@ -1,5 +1,5 @@
 # RedisHA
-Configure Redis HA with Pacemaker
+Configure Standalone Redis HA with Pacemaker
 
 # 목차
   1. Redis AOF
