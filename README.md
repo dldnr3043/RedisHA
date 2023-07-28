@@ -24,7 +24,7 @@ Configure Standalone Redis HA with Pacemaker
   - Pacemaker로 Redis server HA 구성
   - Active - Standby
 
-# 4. Failover 감지
+# 4. Failover 감지 in Spring boot project
   - Failover 발생 시 spring에서 connection을 맺고 있는 redis client에게 failover 발생했다는 이벤트 전달할 수 없어 scheduler를 통해 pooling방식 사용
   - Redis AOF는 pubsub 관련 명령은 기록하지 않기 떄문에 subscribe한 channel 기록은 사라짐
   - redis 명령어인 client list를 통해 각 redis client(spring server) ip가 subscribe한 redis client가 없다면 해당 채널 다시 subscribe
